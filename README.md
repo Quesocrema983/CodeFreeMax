@@ -7,7 +7,7 @@
 ```bash
 # 克隆部署目录
 git clone https://github.com/ssmdo/kiro2api.git
-cd kiro2api/deploy
+cd kiro2api/
 ```
 
 或者直接下载 deploy 目录中的文件。
