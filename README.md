@@ -16,6 +16,8 @@
 
 <img src="home1.png" alt="Kiro2API 首页">
 
+<img src="home2.png" alt="Kiro2API 首页">
+
 ## 📡 API 端点
 
 ### Claude 协议 (`/v1/messages`)
