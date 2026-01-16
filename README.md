@@ -5,47 +5,31 @@
 ### 1. 下载部署文件
 
 ```bash
-# 克隆部署目录
 git clone https://github.com/ssmdo/kiro2api.git
 cd kiro2api/
 ```
 
-或者直接下载 deploy 目录中的文件。
-
-### 2. 配置
-
-复制并编辑配置文件：
+### 2. 一键部署
 
 ```bash
-# 复制环境变量配置
-cp .env.example .env
-
-# 编辑配置（可选）
-vim .env
-```
-
-编辑 `config.yaml` 根据需要修改配置。
-
-### 3. 启动服务
-
-```bash
-# 添加执行权限
 chmod +x deploy.sh
-
-# 启动服务
-./deploy.sh start
+./deploy.sh
 ```
 
-## 命令说明
+运行 `./deploy.sh` 会自动执行：停止旧服务 → 拉取最新镜像 → 启动服务
 
-| 命令 | 说明 |
-|------|------|
-| `./deploy.sh start` | 启动服务 |
-| `./deploy.sh stop` | 停止服务 |
-| `./deploy.sh restart` | 重启服务 |
-| `./deploy.sh logs` | 查看日志 |
-| `./deploy.sh update` | 更新镜像并重启 |
-| `./deploy.sh status` | 查看服务状态 |
+### 3. 常用命令
+
+```bash
+# 查看日志
+docker compose logs -f
+
+# 停止服务
+docker compose down
+
+# 查看状态
+docker compose ps
+```
 
 ## 配置说明
 
@@ -101,14 +85,16 @@ PORT=8080
 
 ### 2. 更新到最新版本
 
+直接重新运行部署脚本即可：
+
 ```bash
-./deploy.sh update
+./deploy.sh
 ```
 
 ### 3. 查看运行日志
 
 ```bash
-./deploy.sh logs
+docker compose logs -f
 ```
 
 ### 4. 数据持久化
@@ -118,4 +104,3 @@ PORT=8080
 ## License
 
 MIT License
-
