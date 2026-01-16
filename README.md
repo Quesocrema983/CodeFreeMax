@@ -4,6 +4,7 @@
 
 ## ✨ 功能特性
 
+- 🚀 **Augment Code 支持** - 完美支持反代 Augment Code，已处理大部分兼容性问题
 - 🔄 **多协议支持** - 同时支持 Claude `/v1/messages` 和 OpenAI `/v1/chat/completions` 端点
 - 🌐 **代理池支持** - 支持 HTTP/HTTPS/SOCKS5 代理，可配置代理池轮询
 - 🔑 **Session 派生** - 代理地址支持 `%s` 占位符，自动替换为账号唯一 Session ID，实现 IP 隔离
@@ -165,6 +166,12 @@ docker compose logs -f
 ## 🙏 鸣谢
 
 - [Augment-BYOK](https://github.com/AnkRoot/Augment-BYOK) - 本插件基于此项目进行魔改，感谢原作者的开源贡献
+
+## ☕ 捐赠
+
+如果这个项目对你有帮助，欢迎请作者喝杯咖啡 ☕
+
+![微信赞赏码](wx.jpg)
 
 ## License
 
