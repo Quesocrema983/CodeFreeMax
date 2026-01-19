@@ -118,8 +118,8 @@ curl -X POST http://localhost:8000/antigravity/v1/chat/completions \
 ### 1. 下载部署文件
 
 ```bash
-git clone https://github.com/ssmdo/augment2api.git
-cd augment2api/
+git clone https://github.com/ssmDo/kiro2api.git
+cd kiro2api/
 ```
 
 ### 2. 一键部署
