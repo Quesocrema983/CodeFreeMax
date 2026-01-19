@@ -1,22 +1,35 @@
-# Kiro2API 部署指南
+# Augment2API 部署指南
 
-将 Kiro AI 转换为标准 API 服务，支持 Claude 和 OpenAI 兼容协议。
+🚀 将 Kiro 等 IDE 转换为兼容 OpenAI/Claude/Augment Code 格式的 API 服务。
+
+## 🎉 V2.0.0 更新说明
+
+> ⚠️ **重要提示**: 更新到 V2.0.0 版本后，AugmentCode 插件需要重新下载安装！
+
+### 新增功能
+
+- 🌌 **反重力（Antigravity）渠道** - 新增 Antigravity 渠道支持，可在 Kiro 和 Antigravity 之间自由切换
+- 🎛️ **按渠道配置代理** - 代理配置支持按渠道独立设置，每个渠道可以使用不同的代理
+- 📋 **模型自定义管理** - 全新的模型管理功能，支持自定义返回的模型列表、名称映射、启用/禁用、排序等
+- 🔌 **AugmentCode 插件全面优化** - 插件体验大幅提升，兼容性更好
 
 ## ✨ 功能特性
 
 - 🚀 **Augment Code 支持** - 完美支持反代 Augment Code，已处理大部分兼容性问题
 - 🔄 **多协议支持** - 同时支持 Claude `/v1/messages` 和 OpenAI `/v1/chat/completions` 端点
-- 🌐 **代理池支持** - 支持 HTTP/HTTPS/SOCKS5 代理，可配置代理池轮询
+- 🌌 **多渠道支持** - 支持 Kiro 和 Antigravity 双渠道，可独立管理
+- 🌐 **代理池支持** - 支持 HTTP/HTTPS/SOCKS5 代理，可按渠道配置独立代理
 - 🔑 **Session 派生** - 代理地址支持 `%s` 占位符，自动替换为账号唯一 Session ID，实现 IP 隔离
 - ⚖️ **负载均衡** - 多账号随机分配，自动跳过异常账号
 - 🔁 **自动重试** - 可配置重试次数、延迟和验证码重试
+- 📋 **模型管理** - 自定义模型列表、名称映射、状态管理
 - 💾 **数据持久化** - SQLite 数据库存储，方便备份迁移
 
 ## 项目展示
 
-<img src="home1.png" alt="Kiro2API 首页">
+<img src="home1.png" alt="Augment2API 首页">
 <br>
-<img src="home2.png" alt="Kiro2API 首页">
+<img src="home2.png" alt="Augment2API 首页">
 <br>
 
 ## 📡 API 端点
@@ -63,8 +76,8 @@ curl -X POST http://localhost:8000/v1/chat/completions \
 ### 1. 下载部署文件
 
 ```bash
-git clone https://github.com/ssmdo/kiro2api.git
-cd kiro2api/
+git clone https://github.com/ssmdo/augment2api.git
+cd augment2api/
 ```
 
 ### 2. 一键部署
@@ -95,7 +108,7 @@ docker compose ps
 
 ```bash
 # Docker 镜像配置
-DOCKER_IMAGE=ssmdo/kiro2api:latest
+DOCKER_IMAGE=ssmdo/augment2api:latest
 
 # 服务端口
 PORT=8000
@@ -110,9 +123,9 @@ server:
 database:
   default:
     type: "sqlite"
-    link: "sqlite:./data/kiro.db"  # 数据库路径
+    link: "sqlite:./data/augment.db"  # 数据库路径
 
-kiro:
+augment:
   apiTarget: "https://q.us-east-1.amazonaws.com"
   authTarget: "https://prod.us-east-1.auth.desktop.kiro.dev"
   version: "0.8.0"
@@ -128,7 +141,7 @@ deploy/
 ├── config.yaml         # 应用配置文件
 ├── .env.example        # 环境变量示例
 └── data/               # 数据目录（自动创建）
-    └── kiro.db         # SQLite 数据库
+    └── augment.db      # SQLite 数据库
 ```
 
 ## 常见问题
@@ -162,6 +175,8 @@ docker compose logs -f
 ## 🔌 Augment Code 配套使用
 
 本项目可配合魔改版 Augment-BYOK 插件使用，实现在 Augment Code 中使用自定义 API 端点。
+
+> ⚠️ **V2.0.0 用户注意**: 更新到 V2.0.0 后，插件需要重新下载安装才能正常使用新功能！
 
 👉 **使用教程**: [飞书文档](https://tcn1dv9putrz.feishu.cn/wiki/NfNEwWkGuiWhNJkHFdRcfXrPnn1)
 🔑 **访问密码**: `734&Q851`
