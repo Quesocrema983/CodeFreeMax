@@ -15,3 +15,9 @@ database:
     type: "sqlite"
     link: "sqlite:./data/kiro.db"
 
+# Redis 配置（用于请求计数）
+redis:
+  addr: "kiro2api-redis:6379"
+  password: ""
+  db: 0
+

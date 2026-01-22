@@ -12,10 +12,28 @@ services:
       - ./data:/app/data
     environment:
       - TZ=Asia/Shanghai
+    depends_on:
+      - redis
     healthcheck:
       test: ["CMD", "wget", "-q", "--spider", "http://localhost:8000/health"]
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 10s
+
+  redis:
+    image: redis:alpine
+    container_name: kiro2api-redis
+    restart: unless-stopped
+    volumes:
+      - redis-data:/data
+    command: redis-server --appendonly yes
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  redis-data:
 
