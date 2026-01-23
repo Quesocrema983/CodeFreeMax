@@ -1,6 +1,6 @@
-# Augment2API 部署指南
+# CodeFreeMax 部署指南
 
-🚀 将 Kiro 等 IDE 转换为兼容 OpenAI/Claude/Augment Code 格式的 API 服务。
+🚀 将 Kiro、Antigravity、Warp、Orchids等 IDE 转换为兼容 OpenAI/Claude/Augment Code 格式的 API 服务。
 
 ## 🎉 V2.1.8 更新说明
 
@@ -90,7 +90,7 @@ docker compose ps
 
 ```bash
 # Docker 镜像配置
-DOCKER_IMAGE=ssmdo/augment2api:latest
+DOCKER_IMAGE=ssmdo/kiro2api:latest
 
 # 服务端口
 PORT=8000
