@@ -63,9 +63,6 @@
 <br>
 <img src="img/v4.png" alt="CodeFreeMax 界面展示 4">
 <br>
-<img src="img/v5.png" alt="CodeFreeMax 界面展示 5">
-<br>
-
 
 ## 快速开始
 
