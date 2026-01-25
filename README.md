@@ -41,9 +41,10 @@
 ## ✨ 功能特性
 
 - 🚀 **Augment Code 支持** - 完美支持反代 Augment Code，已处理大部分兼容性问题
+  - ⭐ **推荐使用 Kiro 渠道**: AugmentCode 目前仅 Kiro 完美适配，其他渠道可能存在兼容性问题
 - 🔄 **多协议支持** - 同时支持 Claude `/v1/messages` 和 OpenAI `/v1/chat/completions` 端点
-- 🌌 **多渠道支持** - 支持 Kiro、Antigravity 和 Warp 三渠道，可独立管理
-  - **Claude 协议**: 仅支持 Kiro 和 Antigravity 渠道
+- 🌌 **多渠道支持** - 支持 Kiro、Antigravity、Warp 和 Orchids 四渠道，可独立管理
+  - **Claude 协议**: 支持 Kiro、Antigravity、Warp 和 Orchids 渠道
   - **OpenAI 格式**: 所有渠道均支持
 - 🌐 **代理池支持** - 支持 HTTP/HTTPS/SOCKS5 代理，可按渠道配置独立代理
 - 🔑 **Session 派生** - 代理地址支持 `%s` 占位符，自动替换为账号唯一 Session ID，实现 IP 隔离
